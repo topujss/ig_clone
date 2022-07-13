@@ -19,13 +19,14 @@ a {
 }
 #ig-header .logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 #ig-header .logo a {
   background: url(./img/icons.png) no-repeat 0px -8.1rem;
   width: 11rem;
   height: 52px;
   transform: scale(0.6);
+  margin-left: 2rem;
 }
 #ig-header .search {
   justify-content: center;
@@ -67,4 +68,113 @@ a {
   border-radius: 50%;
   position: relative;
   top: 6px;
+}
+
+#ig-body {
+  background: var(--bs-gray-100);
+  height: 85vh;
+}
+#ig-body #article .card {
+  overflow: hidden;
+}
+#ig-body #article .card .card-list {
+  padding: 1rem 0.5rem;
+  padding-left: 1rem;
+  text-align: center;
+}
+#ig-body #article .card .card-list img {
+  width: 70%;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: #f90a0a;
+}
+#ig-body #article .card .card-list .card-text h5 {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: #646464;
+}
+#ig-body #aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem 0.1rem;
+  margin-top: 2.3rem;
+}
+#ig-body #aside .auth-body {
+  display: flex;
+}
+#ig-body #aside .auth-body .auth-img img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+#ig-body #aside .auth-body h6 {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: #272727;
+}
+#ig-body #aside .auth-body small {
+  font-size: 0.9rem;
+  position: relative;
+  top: 25px;
+  right: 47px;
+}
+#ig-body #aside .auth-footer a {
+  color: #2ca7f7;
+  font-size: 0.83rem;
+  margin-top: 0.6rem;
+  font-weight: 500;
+}
+#ig-body .follow-area {
+  margin: 1.2rem 1rem;
+}
+#ig-body .follow-area .follow-left h5 {
+  font-size: 0.96rem;
+  color: #949494;
+  margin-bottom: 0.6rem;
+}
+#ig-body .follow-area .follow-right a {
+  color: #272727;
+  font-size: 0.83rem;
+  font-weight: 500;
+}
+#ig-body .follow-people-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#ig-body .follow-people-area .people-list {
+  display: flex;
+}
+#ig-body .follow-people-area .people-list img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  margin-top: 0.1rem;
+  margin-right: 0.8rem;
+}
+#ig-body .follow-people-area .people-desc h6 {
+  font-size: 0.9rem;
+  margin-bottom: -0.2rem;
+}
+#ig-body .follow-people-area .people-desc small {
+  color: #a9a9a9;
+  font-size: 0.9rem;
+}
+#ig-body .follow-people-area .follow-link {
+  color: #2ca7f7;
+  font-size: 0.83rem;
+  font-weight: 500;
+}
+#ig-body .direct-link {
+  margin: 1rem 1rem;
+}
+#ig-body .direct-link a {
+  color: #a9a9a9;
+  font-size: 0.73rem;
+  font-weight: 400;
+}
+#ig-body .direct-link a i {
+  font-size: 0.5rem;
 }
