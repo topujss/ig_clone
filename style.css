@@ -72,7 +72,7 @@ a {
 
 #ig-body {
   background: var(--bs-gray-100);
-  height: 85vh;
+  height: 100vh;
 }
 #ig-body #article .card {
   overflow: hidden;
@@ -83,6 +83,7 @@ a {
   text-align: center;
 }
 #ig-body #article .card .card-list img {
+  cursor: pointer;
   width: 70%;
   border-radius: 50%;
   border: 1px solid;
@@ -92,6 +93,97 @@ a {
   margin-top: 0.2rem;
   font-size: 0.8rem;
   color: #646464;
+}
+#ig-body #article .post-area .card .card-head {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+#ig-body #article .post-area .card .card-head img {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: #f90a0a;
+}
+#ig-body #article .post-area .card .card-head span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+#ig-body #article .post-area .card .card-body {
+  padding: 0;
+  padding-bottom: 0.5rem;
+}
+#ig-body #article .post-area .card .card-body img {
+  width: 100%;
+  height: 23rem;
+}
+#ig-body #article .post-area .card .card-body .card-icon-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+#ig-body #article .post-area .card .card-body .card-icon-area .card-react i,
+#ig-body #article .post-area .card .card-body .card-icon-area .card-save i {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+  font-weight: 600;
+  color: #333333;
+  cursor: pointer;
+}
+#ig-body #article .post-area .card .card-body .react-count {
+  font-size: 0.8rem;
+  color: #333;
+  padding-left: 0.6rem;
+}
+#ig-body #article .post-area .card .card-body .react-time {
+  font-size: 0.8rem;
+  color: #949aae;
+  padding-left: 0.6rem;
+}
+#ig-body #article .post-area .card .card-body hr {
+  height: 0.1rem;
+  color: #e1dfdf;
+}
+#ig-body #article .post-area .card .card-body .comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 0.5rem;
+}
+#ig-body #article .post-area .card .card-body .comment .comment-write {
+  flex-grow: 1;
+}
+#ig-body #article .post-area .card .card-body .comment .comment-write i {
+  font-size: 1.3rem;
+}
+#ig-body #article .post-area .card .card-body .comment .comment-write input {
+  font-size: 0.9rem;
+  padding: 0 0.4rem;
+  outline: none;
+  border: none;
+  width: 64%;
+  position: relative;
+  bottom: 0.2rem;
+}
+#ig-body #article .post-area .card .card-body .comment .comment-write input::-moz-placeholder {
+  color: #949aae;
+  font-weight: 400;
+}
+#ig-body #article .post-area .card .card-body .comment .comment-write input:-ms-input-placeholder {
+  color: #949aae;
+  font-weight: 400;
+}
+#ig-body #article .post-area .card .card-body .comment .comment-write input::placeholder {
+  color: #949aae;
+  font-weight: 400;
+}
+#ig-body #article .post-area .card .card-body .comment .comment-btn button {
+  color: #0d6efd;
+  border: none;
+  outline: none;
+  background: transparent;
 }
 #ig-body #aside {
   display: flex;
@@ -171,6 +263,7 @@ a {
   margin: 1rem 1rem;
 }
 #ig-body .direct-link a {
+  text-transform: capitalize;
   color: #a9a9a9;
   font-size: 0.73rem;
   font-weight: 400;
