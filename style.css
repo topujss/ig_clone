@@ -14,6 +14,7 @@ a {
 }
 
 #ig-header {
+  background: #fff;
   display: flex;
   padding: 0;
 }
@@ -71,8 +72,8 @@ a {
 }
 
 #ig-body {
-  background: var(--bs-gray-100);
-  height: 100vh;
+  background: #f8f9fa;
+  height: 100%;
 }
 #ig-body #article .card {
   overflow: hidden;
@@ -112,6 +113,7 @@ a {
   margin-left: 0.3rem;
 }
 #ig-body #article .post-area .card .card-body {
+  border: none;
   padding: 0;
   padding-bottom: 0.5rem;
 }
@@ -133,9 +135,19 @@ a {
   cursor: pointer;
 }
 #ig-body #article .post-area .card .card-body .react-count {
+  font-weight: 400;
   font-size: 0.8rem;
   color: #333;
   padding-left: 0.6rem;
+}
+#ig-body #article .post-area .card .card-body .react-content {
+  font-size: 0.8rem;
+  color: #333;
+  padding-left: 0.6rem;
+}
+#ig-body #article .post-area .card .card-body .react-content b {
+  font-weight: 600;
+  color: #333;
 }
 #ig-body #article .post-area .card .card-body .react-time {
   font-size: 0.8rem;
@@ -185,16 +197,20 @@ a {
   outline: none;
   background: transparent;
 }
+#ig-body .top-stick {
+  position: fixed;
+  z-index: 1010;
+  top: 5.8rem;
+  right: auto;
+}
 #ig-body #aside {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   padding: 0.2rem 0.1rem;
-  margin-top: 2.3rem;
 }
 #ig-body #aside .auth-body {
   display: flex;
+  flex-grow: 0.4;
 }
 #ig-body #aside .auth-body .auth-img img {
   width: 3.5rem;
@@ -219,7 +235,13 @@ a {
   font-weight: 500;
 }
 #ig-body .follow-area {
-  margin: 1.2rem 1rem;
+  display: flex;
+  margin: 1.2rem 0rem;
+}
+#ig-body .follow-area .follow-left {
+  display: flex;
+  align-items: center;
+  flex-grow: 0.56;
 }
 #ig-body .follow-area .follow-left h5 {
   font-size: 0.96rem;
@@ -233,11 +255,11 @@ a {
 }
 #ig-body .follow-people-area {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 #ig-body .follow-people-area .people-list {
   display: flex;
+  flex-grow: 0.52;
 }
 #ig-body .follow-people-area .people-list img {
   width: 2.4rem;
@@ -260,7 +282,7 @@ a {
   font-weight: 500;
 }
 #ig-body .direct-link {
-  margin: 1rem 1rem;
+  padding-right: 1rem;
 }
 #ig-body .direct-link a {
   text-transform: capitalize;

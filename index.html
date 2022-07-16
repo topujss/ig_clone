@@ -23,7 +23,7 @@
 	<!-- to run scss /> sass -w --no-source-map style.scss style.css -->
 	<body>
 		<!-- ig header start -->
-		<header id="ig-header" class="shadow-sm">
+		<header id="ig-header" class="shadow-sm sticky-top">
 			<div class="container g-5">
 				<div class="row mx-5 justify-content-center align-items-center">
 					<div class="col-md-4">
@@ -49,7 +49,7 @@
 									</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">
+									<a class="nav-link" data-bs-toggle="modal" href="#ig-post-modal">
 										<i class="bi bi-plus-square"></i>
 									</a>
 								</li>
@@ -75,7 +75,7 @@
 			</div>
 		</header>
 		<!-- ig body start -->
-		<div id="ig-body">
+		<section id="ig-body">
 			<div class="container px-5">
 				<div class="row">
 					<div class="col-md-1 me-4"></div>
@@ -108,141 +108,145 @@
 								</div>
 							</div>
 							<!-- post start -->
-							<div class="post-area mt-3">
-								<div class="card">
-									<div class="card-head">
-										<div class="card-left">
-											<img src="./img/me.jpg" alt="" />
-											<span>topujss</span>
-										</div>
-										<div class="card-right">
-											<div class="dropdown">
-												<a href="#" data-bs-toggle="dropdown">
-													<i class="bi bi-three-dots"></i>
-												</a>
-												<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-													<li><a href="#" class="dropdown-item text-danger">Report</a></li>
-													<li><a href="#" class="dropdown-item text-danger">Unfollow</a></li>
-													<li><a href="#" class="dropdown-item text-secondary">Go to post</a></li>
-												</ul>
-											</div>
-										</div>
+							<div class="main-post"></div>
+						</div>
+					</div>
+					<div class="col-md-3 ms-4">
+						<div class="top-stick">
+							<div id="aside">
+								<div class="auth-body">
+									<div class="auth-img me-3"><img src="./img/me.jpg" alt="" /></div>
+									<h6>topujss</h6>
+									<small class="text-muted">Toquir Ahmed</small>
+								</div>
+								<div class="auth-footer"><a href="#">Switch</a></div>
+							</div>
+							<div class="follow-area">
+								<div class="follow-left">
+									<h5 class="text-capitalize">Suggestions for you</h5>
+								</div>
+								<div class="follow-right"><a href="#">See All</a></div>
+							</div>
+							<div class="follow-people-area mb-3">
+								<div class="people-list">
+									<img src="./img/s1.jpg" alt="" />
+									<div class="people-desc">
+										<h6 class="list-title">youreal1</h6>
+										<small class="list-title">followed by udev</small>
 									</div>
-									<div class="card-body">
-										<img src="./img/motive.jpg" alt="" />
-										<div class="card-icon-area">
-											<div class="card-react">
-												<i class="bi bi-heart"></i>
-												<i class="bi bi-chat"></i>
-												<i class="bi bi-send-fill"></i>
-											</div>
-											<div class="card-save">
-												<i class="bi bi-bookmark"></i>
-											</div>
-										</div>
-										<div class="react-count">
-											<span>294</span>
-											Likes
-										</div>
-										<div class="react-time">
-											<span>Just Now</span>
-										</div>
-										<hr />
-										<div class="comment">
-											<div class="comment-write">
-												<i class="bi bi-emoji-smile"></i>
-												<input type="text" placeholder="Add a comment..." />
-											</div>
-											<div class="comment-btn">
-												<button type="submit" class="">Post</button>
-											</div>
-										</div>
+								</div>
+								<div class="follow-link"><a href="#">Follow</a></div>
+							</div>
+							<div class="follow-people-area mb-3">
+								<div class="people-list">
+									<img src="./img/s3.jpg" alt="" />
+									<div class="people-desc">
+										<h6 class="list-title">sasslang</h6>
+										<small class="list-title">followed by udev</small>
 									</div>
+								</div>
+								<div class="follow-link"><a href="#">Follow</a></div>
+							</div>
+							<div class="follow-people-area mb-2">
+								<div class="people-list">
+									<img src="./img/s2.jpg" alt="" />
+									<div class="people-desc">
+										<h6 class="list-title">youreal2</h6>
+										<small class="list-title">followed by coder</small>
+									</div>
+								</div>
+								<div class="follow-link"><a href="#">Follow</a></div>
+							</div>
+							<div class="direct-link">
+								<a href="#">
+									about
+									<i class="bi bi-dot"></i>
+								</a>
+								<a href="#">
+									help
+									<i class="bi bi-dot"></i>
+								</a>
+								<a href="#">
+									press
+									<i class="bi bi-dot"></i>
+								</a>
+								<a href="#">
+									API
+									<i class="bi bi-dot"></i>
+								</a>
+								<a href="#">
+									jobs
+									<i class="bi bi-dot"></i>
+								</a>
+								<a href="#">
+									privacy
+									<i class="bi bi-dot"></i>
+								</a>
+								<a href="#">
+									terms
+									<i class="bi bi-dot"></i>
+								</a>
+								<br />
+								<a href="#">
+									location
+									<i class="bi bi-dot"></i>
+								</a>
+								<a href="#">language</a>
+								<div class="copyright mt-3">
+									<small class="text-muted text-uppercase">
+										&copy; instragram from meta by Ahmed
+									</small>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div id="aside">
-							<div class="auth-body">
-								<div class="auth-img me-3"><img src="./img/me.jpg" alt="" /></div>
-								<h6>topujss</h6>
-								<small class="text-muted">Toquir Ahmed</small>
-							</div>
-							<div class="auth-footer"><a href="#">Switch</a></div>
-						</div>
-						<div class="follow-area d-flex justify-content-between gx-5">
-							<div class="follow-left">
-								<h5 class="text-capitalize">Suggestions for you</h5>
-							</div>
-							<div class="follow-right"><a href="#">See All</a></div>
-						</div>
-						<div class="follow-people-area mb-3">
-							<div class="people-list">
-								<img src="./img/s1.jpg" alt="" />
-								<div class="people-desc">
-									<h6 class="list-title">youreal1</h6>
-									<small class="list-title">followed by udev</small>
-								</div>
-							</div>
-							<div class="follow-link"><a href="#">Follow</a></div>
-						</div>
-						<div class="follow-people-area mb-2">
-							<div class="people-list">
-								<img src="./img/s2.jpg" alt="" />
-								<div class="people-desc">
-									<h6 class="list-title">youreal2</h6>
-									<small class="list-title">followed by coder</small>
-								</div>
-							</div>
-							<div class="follow-link"><a href="#">Follow</a></div>
-						</div>
-						<div class="direct-link ms-5 mt-4">
-							<a href="#">
-								about
-								<i class="bi bi-dot"></i>
-							</a>
-							<a href="#">
-								help
-								<i class="bi bi-dot"></i>
-							</a>
-							<a href="#">
-								press
-								<i class="bi bi-dot"></i>
-							</a>
-							<a href="#">
-								API
-								<i class="bi bi-dot"></i>
-							</a>
-							<a href="#">
-								jobs
-								<i class="bi bi-dot"></i>
-							</a>
-							<a href="#">
-								privacy
-								<i class="bi bi-dot"></i>
-							</a>
-							<a href="#">
-								terms
-								<i class="bi bi-dot"></i>
-							</a>
-							<a href="#">
-								location
-								<i class="bi bi-dot"></i>
-							</a>
-							<a href="#">language</a>
-							<div class="copyright mt-3">
-								<small class="text-muted text-uppercase">
-									&copy; instragram from meta by Ahmed
-								</small>
-							</div>
-						</div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+		</section>
+		<!-- post modal start -->
+		<div class="modal fade" id="ig-post-modal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Create new IG post</h3>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
 					</div>
-					<div class="col-md-2"></div>
+					<div class="modal-body">
+						<div class="msg"></div>
+						<form action="#" id="post-add">
+							<div class="my-3">
+								<label>Author name:</label>
+								<input type="text" name="aname" class="form-control" />
+							</div>
+							<div class="my-3">
+								<label>Author img:</label>
+								<input type="text" name="apic" class="form-control" />
+							</div>
+							<div class="my-3">
+								<label>Post img:</label>
+								<input type="text" name="ppic" class="form-control" />
+							</div>
+							<div class="my-3">
+								<label>Post content:</label>
+								<textarea
+									class="form-control"
+									name="pcont"
+									maxlength="230"
+									placeholder="No more than 230 characters"
+								></textarea>
+							</div>
+							<div class="my-3 text-center">
+								<button class="btn btn-primary w-75" type="submit">Submit Data</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
+
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="function.js"></script>
 		<script src="readme.js"></script>
 	</body>
 </html>
