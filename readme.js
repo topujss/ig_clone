@@ -125,7 +125,7 @@ main_post.onclick = (e) => {
 
     const data = allData.find((data) => data.id == id);
 
-    editForm.innerHTML += `
+    editForm.innerHTML = `
     <div class="my-3">
       <label>Author name:</label>
       <input type="text" name="aname" value="${data.aname}" class="form-control" />
